@@ -18,6 +18,11 @@
     ],
     "android": {
       "package": "pg.centralprovince.simscentral"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "46cfcd51-0ac7-4b54-96d4-203db0c62b77"
+      }
     }
   }
 }
