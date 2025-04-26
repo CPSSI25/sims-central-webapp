@@ -1,0 +1,18 @@
+SIMS Central is a complete School Information Management System app built for schools under Central Province, Papua New Guinea.
+
+It enables principals, teachers, students, HQ officers, and parents to stay connected and manage school operations effectively — both online and offline.
+
+Key Features:
+- Student Registration with auto-generated admission numbers
+- Staff Registration and Attendance Tracking
+- Staff Leave Application (Apply and get approvals online)
+- Summary Reports for Students and Staff
+- Printable Registration Cards and Leave Forms
+- Teaching Job Applications for new teachers
+- Communication Hub (Group messaging for HQ Officers, Principals, Teachers, Students, Parents)
+- Upload Files, Photos, Documents in Chats
+- Offline-first Design (Works offline and syncs automatically)
+- Secure Multi-Role Login (HQ Admin, Principal, Staff, Student, Parent)
+
+Rooted in Faith, Driven by Knowledge, Built for Excellence.
+SIMS Central — empowering education through technology.
