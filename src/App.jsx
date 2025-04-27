@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import StudentRegistration from './pages/StudentRegistration';
+import StaffRegistration from './pages/StaffRegistration';
+import Attendance from './pages/Attendance';
+import CommunicationHub from './pages/CommunicationHub';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className="min-h-screen bg-blue-50">
+        <nav className="bg-blue-700 p-4 text-white flex justify-between">
+          <h1 className="font-bold">SIMS Central</h1>
+          <div className="flex gap-4">
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/student-registration">Student Registration</Link>
+            <Link to="/staff-registration">Staff Registration</Link>
+            <Link to="/attendance">Attendance</Link>
+            <Link to="/communication-hub">Communication Hub</Link>
+          </div>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/student-registration" element={<StudentRegistration />} />
+          <Route path="/staff-registration" element={<StaffRegistration />} />
+          <Route path="/attendance" element={<Attendance />} />
+          <Route path="/communication-hub" element={<CommunicationHub />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
-
-export default App
